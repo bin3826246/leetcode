@@ -95,18 +95,18 @@ int LinkedList::Print() const
 
 int LinkedList::Reverse() const
 {
-     Node * p = head->next;
-     Node * q = head->next->next;
-     Node * m = head->next->next->next;
-     p->next = nullptr;
-     while(m){
-         q->next = p;
-         p = q;
-         q = m;
-         m = m->next;
+     Node * pre = head->next;
+     Node * cur = head->next->next;
+     Node * next = head->next->next->next;
+    pre->next = nullptr;
+     while(next){
+         cur->next = pre;
+         pre = cur;
+         cur = next;
+         next = next->next;
      }
-     q->next = p;
-     head ->next = q;
+    cur->next = pre;
+     head ->next = cur;
      return 0;
 }
 
@@ -121,7 +121,7 @@ int main()
     List.Create(li);
     List.Print();
     cout<<endl;
-    List.Insert(&temp, 2);
+    List.Insert(&temp, 0);
     List.Print();
     cout<<endl;
     List.Delete(3);
