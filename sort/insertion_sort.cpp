@@ -11,14 +11,15 @@ vector<T> insertionSort(vector<T> &v)
 {
     const int LEN = v.size();
     T temp;
-    for (int i = 0; i < LEN - 1; i++)
+    int i,j;
+    for (i = 0; i < LEN - 1; i++)
     {
         temp = v[i+1];
-        for (int j = i; temp < v[j] && j >= 0; j--)
+        for (j = i; temp < v[j] && j >= 0; j--)
         {
                 v[j+1] = v[j];
-                v[j] = temp;
         }
+        v[j] = temp;
     }
     return v;
 }
