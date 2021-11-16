@@ -12,5 +12,7 @@ add_executable(ch ch.cpp)
 
 add_executable(fi fi.cpp)
 add_executable(new new.cpp)
-add_executable(new1 new1.cpp)
+add_executable(detectCapitalUse detectCapitalUse.cpp)
 add_executable(addTwoNumbers addTwoNumbers.cpp)
+
+add_executable(a a.cpp)
