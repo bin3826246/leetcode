@@ -15,4 +15,4 @@ add_executable(new new.cpp)
 add_executable(detectCapitalUse detectCapitalUse.cpp)
 add_executable(addTwoNumbers addTwoNumbers.cpp)
 
-add_executable(a a.cpp)
+add_executable(lengthOfLongestSubstring lengthOfLongestSubstring.cpp)
