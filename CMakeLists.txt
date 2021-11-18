@@ -16,3 +16,4 @@ add_executable(detectCapitalUse detectCapitalUse.cpp)
 add_executable(addTwoNumbers addTwoNumbers.cpp)
 
 add_executable(lengthOfLongestSubstring lengthOfLongestSubstring.cpp)
+add_executable(maxProduct maxProduct.cpp)
