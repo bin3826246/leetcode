@@ -17,3 +17,4 @@ add_executable(addTwoNumbers addTwoNumbers.cpp)
 
 add_executable(lengthOfLongestSubstring lengthOfLongestSubstring.cpp)
 add_executable(maxProduct maxProduct.cpp)
+add_executable(findMedianSortedArrays findMedianSortedArrays.cpp)
