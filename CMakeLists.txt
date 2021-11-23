@@ -18,3 +18,6 @@ add_executable(addTwoNumbers addTwoNumbers.cpp)
 add_executable(lengthOfLongestSubstring lengthOfLongestSubstring.cpp)
 add_executable(maxProduct maxProduct.cpp)
 add_executable(findMedianSortedArrays findMedianSortedArrays.cpp)
+
+add_executable(shuffleArray shuffleArray.cpp)
+add_executable(longestPalindrome longestPalindrome.cpp)
