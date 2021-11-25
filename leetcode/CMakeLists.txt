@@ -18,3 +18,4 @@ add_executable(ReverseInteger ReverseInteger.cpp)
 
 add_executable(217containsDuplicate 217containsDuplicate.cpp)
 add_executable(027maxSubArray 027maxSubArray.cpp)
+add_executable(088mergeSortedArray 088mergeSortedArray.cpp)
