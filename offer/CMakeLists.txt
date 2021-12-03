@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(offer main.cpp)
 add_executable(09CQueue 09CQueue.cpp)
+add_executable(30MinStack 30MinStack.cpp)
