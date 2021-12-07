@@ -1,4 +1,4 @@
-
+cmake_minimum_required(VERSION 3.16)
 project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -33,3 +33,5 @@ add_executable(021mergeTwoLists 021mergeTwoLists.cpp)
 add_executable(203removeElements 203removeElements.cpp)
 add_executable(083deleteDuplicates 083deleteDuplicates.cpp)
 add_executable(020ValidParentheses 020ValidParentheses.cpp)
+add_executable(postorderTraversal postorderTraversal.cpp)
+add_executable(240searchMatrix 240searchMatrix.cpp)
