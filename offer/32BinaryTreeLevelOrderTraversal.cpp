@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 using namespace std;
-
+#define null -1
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -32,3 +32,34 @@ public:
         return res;
     }
 };
+int main() {
+    vector<int> nums = {3,9,20,null,null,15,7};
+    TreeNode *root = new TreeNode(nums[0]);
+    queue<TreeNode *> que;
+    que.push(root);
+    int i = 1;
+    while (i < nums.size()) {
+        if (nums[i] != null) {
+            que.front()->left = new TreeNode(nums[i]);
+            que.push(que.front()->left);
+        } else {
+            que.front()->left = nullptr;
+        }
+        i++;
+        if (nums[i] != null) {
+            que.front()->right = new TreeNode(nums[i]);
+            que.push(que.front()->right);
+        } else {
+            que.front()->right = nullptr;
+        }
+        i++;
+        que.pop();
+    }
+    Solution sol;
+    vector<int> res = sol.levelOrder(root);
+    for(int a : res){
+        cout<<a<<',';
+    }
+
+    return 0;
+}
