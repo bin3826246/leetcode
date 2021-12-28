@@ -11,3 +11,4 @@ add_executable(32BinaryTreeLevelOrderTraversal 32BinaryTreeLevelOrderTraversal.c
 add_executable(57twoSum 57twoSum.cpp)
 add_executable(41MedianFinder 41MedianFinder.cpp)
 add_executable(29spiralOrder 29spiralOrder.cpp)
+add_executable(20isNumber 20isNumber.cpp)
