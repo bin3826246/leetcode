@@ -35,14 +35,12 @@ public:
             if(need == 0){
                 if(tmap.find(s[left]) != tmap.end() && tmap[s[left]] < 0){
                     tmap[s[left]]++;
-//                    need++;
                     left++;
                     while (tmap.find(s[left]) == tmap.end() || (tmap.find(s[left]) != tmap.end() && tmap[s[left]] != 0)){
                         if(tmap.find(s[left]) != tmap.end() && tmap[s[left]] != 0) tmap[s[left]]++;
                         left++;
                     }
                 }
-//                need--;
                 if(right - left + 1 < minLen){
                     minLen = right - left + 1;
                     start = left;
