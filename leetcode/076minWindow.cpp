@@ -41,6 +41,7 @@ public:
                         left++;
                     }
                 }
+//                need--;
                 if(right - left + 1 < minLen){
                     minLen = right - left + 1;
                     start = left;
